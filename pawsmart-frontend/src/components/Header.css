@@ -1,0 +1,135 @@
+.main-header {
+  background-color: #d4a574;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: #8b4513;
+  font-weight: 600;
+  border: 2px solid #8b4513;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #5d4037;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.brand-name:hover {
+  color: #8b4513;
+}
+
+.header-nav {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #5d4037;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #8b4513;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #8b4513;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-login-btn {
+  background-color: #87ceeb;
+  color: #fff;
+  padding: 0.625rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.header-login-btn:hover {
+  background-color: #6bb6d6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 968px) {
+  .header-nav {
+    display: none;
+  }
+  
+  .header-content {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    padding: 1rem;
+  }
+  
+  .brand-name {
+    font-size: 1.25rem;
+  }
+  
+  .logo-placeholder {
+    width: 40px;
+    height: 40px;
+    font-size: 0.65rem;
+  }
+}
+
