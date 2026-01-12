@@ -88,7 +88,8 @@
   align-items: center;
 }
 
-.header-login-btn {
+.header-login-btn,
+.header-signup-btn {
   background-color: #87ceeb;
   color: #fff;
   padding: 0.625rem 1.5rem;
@@ -101,7 +102,8 @@
   cursor: pointer;
 }
 
-.header-login-btn:hover {
+.header-login-btn:hover,
+.header-signup-btn:hover {
   background-color: #6bb6d6;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

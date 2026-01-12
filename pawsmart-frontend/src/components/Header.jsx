@@ -23,8 +23,11 @@ function Header() {
         </nav>
         
         <div className="header-right">
+          {isLoginPage && (
+            <Link to="/register" className="header-signup-btn">Sign Up</Link>
+          )}
           {!isLoginPage && !isRegisterPage && (
-            <Link to="/login" className="header-login-btn">Login</Link>
+            <Link to="/register" className="header-signup-btn">Sign Up</Link>
           )}
         </div>
       </div>
